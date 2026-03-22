@@ -19,9 +19,10 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --primary: #6B9B3D;
-      --primary-dark: #4E7A2A;
-      --primary-light: #82B254;
+      --primary: #507599;
+      --primary-dark: #3e5f79;
+      --primary-light: #6b88b4;
+      --nav-green: #6B9B3D;
       --accent: #f0c419;
       --bg: #fafaf8;
       --bg-alt: #f0efeb;
@@ -48,7 +49,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: var(--primary);
+      background: var(--nav-green);
       color: var(--white);
       z-index: 100;
       box-shadow: 0 1px 4px rgba(0,0,0,0.06);
@@ -268,7 +269,7 @@
     .contact-form select:focus {
       outline: none;
       border-color: var(--primary-light);
-      box-shadow: 0 0 0 3px rgba(107,155,61,0.15);
+      box-shadow: 0 0 0 3px rgba(80,117,153,0.15);
     }
     .contact-form textarea { resize: vertical; min-height: 120px; }
     .submit-btn {

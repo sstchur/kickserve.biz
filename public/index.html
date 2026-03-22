@@ -12,13 +12,16 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kickserve.biz">
   <meta property="og:image" content="https://kickserve.biz/kstlogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --primary: #507599;
-      --primary-dark: #3e5f79;
-      --primary-light: #6b88b4;
+      --primary: #6B9B3D;
+      --primary-dark: #4E7A2A;
+      --primary-light: #82B254;
       --accent: #f0c419;
       --bg: #fafaf8;
       --bg-alt: #f0efeb;
@@ -59,8 +62,9 @@
       justify-content: space-between;
     }
     .nav-brand {
-      font-weight: 700;
-      font-size: 1.2rem;
+      font-family: 'Pacifico', cursive;
+      font-weight: 400;
+      font-size: 1.4rem;
       color: var(--white);
       text-decoration: none;
     }
@@ -103,10 +107,11 @@
       filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
     }
     .hero h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
+      font-family: 'Pacifico', cursive;
+      font-size: 2.6rem;
+      font-weight: 400;
       margin-bottom: 0.75rem;
-      letter-spacing: -0.5px;
+      letter-spacing: 0px;
     }
     .hero p {
       font-size: 1.15rem;
@@ -263,7 +268,7 @@
     .contact-form select:focus {
       outline: none;
       border-color: var(--primary-light);
-      box-shadow: 0 0 0 3px rgba(80,117,153,0.15);
+      box-shadow: 0 0 0 3px rgba(107,155,61,0.15);
     }
     .contact-form textarea { resize: vertical; min-height: 120px; }
     .submit-btn {

@@ -16,13 +16,13 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --primary: #2d6a4f;
-      --primary-dark: #1b4332;
-      --primary-light: #40916c;
-      --accent: #d4a843;
+      --primary: #507599;
+      --primary-dark: #3e5f79;
+      --primary-light: #6b88b4;
+      --accent: #f0c419;
       --bg: #fafaf8;
       --bg-alt: #f0efeb;
-      --text: #2c2c2c;
+      --text: #1f2a33;
       --text-light: #5a5a5a;
       --white: #ffffff;
       --shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -45,8 +45,8 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(10px);
+      background: var(--primary);
+      color: var(--white);
       z-index: 100;
       box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     }
@@ -61,18 +61,18 @@
     .nav-brand {
       font-weight: 700;
       font-size: 1.2rem;
-      color: var(--primary-dark);
+      color: var(--white);
       text-decoration: none;
     }
     .nav-links { display: flex; gap: 1.5rem; list-style: none; }
     .nav-links a {
       text-decoration: none;
-      color: var(--text-light);
+      color: var(--white);
       font-size: 0.95rem;
       font-weight: 500;
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--primary); }
+    .nav-links a:hover { color: var(--accent); }
     .hamburger {
       display: none;
       background: none;
@@ -263,7 +263,7 @@
     .contact-form select:focus {
       outline: none;
       border-color: var(--primary-light);
-      box-shadow: 0 0 0 3px rgba(64,145,108,0.15);
+      box-shadow: 0 0 0 3px rgba(80,117,153,0.15);
     }
     .contact-form textarea { resize: vertical; min-height: 120px; }
     .submit-btn {

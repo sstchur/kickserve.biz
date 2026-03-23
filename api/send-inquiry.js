@@ -46,13 +46,13 @@ export default async function handler(req, res) {
     });
 
     if (error) {
-      console.error('Resend error:', error);
-      return res.status(500).json({ error: 'Failed to send email. Please try again later.' });
+      console.error('Resend error:', JSON.stringify(error));
+      return res.status(500).json({ error: 'Failed to send email. Please try again later.', detail: error.message || error });
     }
 
     return res.status(200).json({ success: true, id: data?.id });
   } catch (err) {
     console.error('Send error:', err);
-    return res.status(500).json({ error: 'Failed to send email. Please try again later.' });
+    return res.status(500).json({ error: 'Failed to send email. Please try again later.', detail: err.message || String(err) });
   }
 }
